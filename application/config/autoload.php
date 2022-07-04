@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+$autoload['libraries'] = array('database');
+
+$autoload['libraries'] = array('database','user_agent','email');
+
 /*
 | -------------------------------------------------------------------
 | AUTO-LOADER
