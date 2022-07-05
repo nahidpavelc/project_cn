@@ -1,14 +1,17 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$autoload['libraries'] = array('database');
 
-$autoload['libraries'] = array('database','user_agent','email');
+// and later call it like this:
+
+// $query  = $this->m_lib->FirstController(...);
 
 /*
 | -------------------------------------------------------------------
 | AUTO-LOADER
-| -------------------------------------------------------------------
+|
+-------------------------------------------------------------------
+
 | This file specifies which systems should be loaded by default.
 |
 | In order to keep the framework as light-weight as possible only the
@@ -62,7 +65,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array();
+$autoload['libraries'] = array('database');
 
 /*
 | -------------------------------------------------------------------
@@ -93,7 +96,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array();
+$autoload['helper'] = array('url');
 
 /*
 | -------------------------------------------------------------------
